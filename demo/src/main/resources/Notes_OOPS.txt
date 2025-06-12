@@ -51,6 +51,11 @@ Encapsulation:
 	encapsulate all properties in single unit. ex: class
 Abstraction:
 	show only relevant info to outer world. implement using abstract class or interface
+	abstract class: 0-100%
+	    may have abstaract method or concrete method
+	Interface: 100%
+	    must have abstract method as concrete methiod is not allowed
+
 Inheritance:
 	parent class -> child class/sub class
 	parent class is also knownn base class and child class is also known as derived class
@@ -109,4 +114,18 @@ create way:
 	String c = "abcd";			//One Object -> one in heap
 
 
+static:
+    it is like constant
+    it is linked with class and shared with all onjects
+    it can be set :
+        1. while declaration
+            private static String department="CS";
+        2. static block:
+            static {
+                    department = "CS";
+                }
+        3. static method:
+            create any method of static type and define under that
 
+    first constructor gets invoked under which first static body will gets executed and tghen constructor body witll get executed
+    first constructor gets invoked under which first static body will gets executed(parent first then child) and tghen constructor body witll get executed

@@ -11,9 +11,29 @@ public class Employee extends Person {
     private int height;
     private String name;
 
+    private static String department;
+
+
+
+    public static String getDepartment() {
+        return department;
+    }
+
+    public static void setDepartment(String department) {
+        Employee.department = department;
+    }
+
     //Default Constructor
     public Employee() {
+//        System.out.println("Person Static Block");
+//        System.out.println("static method");
+//        department = "CS";
+        System.out.println("constructor");
 
+    }
+    static {
+        System.out.println("static method");
+        department = "CS";
     }
 
     public String getName() {
@@ -76,6 +96,7 @@ public class Employee extends Person {
                 ", salary=" + salary +
                 ", height=" + height +
                 ", name='" + this.name + '\'' +
+                ", department='" + department + '\'' +
                 ", parent name='" + super.name + '\'' +
                 '}';
     }

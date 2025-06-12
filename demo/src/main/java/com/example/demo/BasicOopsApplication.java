@@ -50,9 +50,13 @@ public class BasicOopsApplication {
 //        System.out.println(c.equals(a));    //true
 
 
+		Employee e2 = null;
 		Employee e1 = new Employee();
 		e1.setParentName("testParentName");
 		e1.setName("testName");
+//		Employee.setDepartment("IT");
+		System.out.println("Employee Object:: "+e1.toString());
+		Employee.setDepartment("IT");
 		System.out.println("Employee Object:: "+e1.toString());
 		System.out.println("Employee Name:: "+e1.getParentName());
 		System.out.println("Employee Overload:: "+e1.getSalaryWithAge(12));
@@ -60,7 +64,8 @@ public class BasicOopsApplication {
 		System.out.println("Employee Overload:: "+e1.getSalaryWithAge("testString"));
 		System.out.println("End");
 
-
+		Car carObj = new Car();
+		carObj.getNoOfWheels();
 
 
 
